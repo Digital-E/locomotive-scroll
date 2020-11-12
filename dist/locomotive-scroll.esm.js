@@ -2164,7 +2164,7 @@ var _default$2 = /*#__PURE__*/function (_Core) {
       if (this.isMobile) {
         delta = this[this.context].horizontalGesture ? e.deltaX : e.deltaY;
       } else {
-        delta = this.horizontalGesture ? e.deltaX : e.deltaY;
+        delta = this.horizontalGesture ? e.deltaX + e.deltaY : e.deltaY;
       }
 
       this.instance.delta[this.directionAxis] -= delta * this.multiplier;
